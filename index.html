@@ -1,0 +1,304 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+ <meta http-equiv = "Content-Type" 
+      content = "text/html; charset = utf-8" > 
+      
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
+      <style>
+          div#content{
+               width: 80;
+               border: none;
+               margin:auto;
+               background-color: black;
+               color: white;
+               font-family: 'Jura', sans-serif;
+               font-size: 30px;
+          }
+
+          footer{
+               border-top: 2px solid #F8FF28; /* Граница только сверху */
+               border-right: none; /* Убираем границы справа */
+               border-bottom: none; /* Убираем границы снизу */
+               border-left: none; /* Убираем границы слева */
+               margin-top: 100px;
+          }
+          header, footer {
+               color:white;
+               background-color: black;
+               clear: left;
+               text-align: center;
+          }
+
+          nav{
+               height: 40px;
+               text-align: right;
+               margin-top: 30px;
+          }
+
+          nav a, table a{
+               font-weight: lighter;
+               text-decoration: none;
+               color: white;
+               margin: 60px;
+          }
+
+          footer a{
+               font-weight: lighter;
+               text-decoration: none;
+               color: white;
+               margin: 0; 
+               font-size: 15px;
+          }
+
+          footer p{
+               margin: 0%;
+               text-align: center;
+          }
+
+          #main{
+               padding: 1em;
+               text-align: center;
+               border-bottom: 1px solid #F8FF28; /* Граница только сверху */
+               border-right: none; /* Убираем границы справа */
+               border-top: none; /* Убираем границы снизу */
+               border-left: none; /* Убираем границы слева */
+
+          }
+
+          div #main_man img{
+               width: 1430px;
+               height: 450px;
+               padding: 0%;
+          }
+
+          nav img{
+               width: 255px;
+               height: 45px;
+               float: left;
+               margin-left: 60px;
+          }
+
+          #slogan{
+               font-size: 32px;
+          }
+
+          #footer_info{
+               font-size: 10px;
+          }
+          #smart_info{
+        display: flex; /* Включаем flex-контейнер */
+        justify-content: space-around; /* Равномерно распределяем элементы по горизонтали */
+        align-items: center; /* Выравнивание по вертикали */
+       
+    }
+    table#why_us {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse; /* Убираем отступы между ячейками */
+}
+
+td {
+    border: none;
+    padding-top: 0px;
+    vertical-align: top;
+    height: auto;
+    font-size: 20px;
+    text-align: left;
+    position: relative;
+}
+table img{
+     margin: 15px;
+     width: 55px;
+     height: 55px;
+}
+
+.first-column, .third-column {
+    width: 10%; /* Ширина для первых и третьих столбцов */
+}
+
+.second-column, .fourth-column {
+    width: 35%; /* Ширина для вторых и четвертых столбцов */
+}
+
+td p {
+    margin: 0; /* Убираем отступы внутри p-элементов, если они есть */
+}
+
+ul {
+               list-style-type: none; /* Убираем стандартные маркеры списка */
+               padding-left: 0;
+          }
+
+          .smart_info {
+    display: flex; /* Включаем Flexbox */
+    justify-content: space-between; /* Распределяем элементы по строке с равными отступами */
+    flex-wrap: wrap; /* Позволяет элементам переноситься на следующую строку, если не помещаются */
+}
+
+.box {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 30%; /* Ширина каждого элемента */
+}
+
+
+      </style>
+ <title> 
+     Фитнес-клуб "НайкиПро"
+ </title> 
+</head> 
+<body style="background-color: black;"> 
+     <div id = "content">
+          <!-- Начало блока маню страницы -->
+          <nav>
+               <a href="index.html"><img src = "img/лого.png"></a>
+     <!-- Гиперссылка на главную страницу сайта -->
+               <a href="index.html" style="color: #F8FF28;">
+                    О нас
+               </a>
+               <!-- гиперссылки на другие страницы -->
+                <a href="tariffs.html">
+                    Тарифы
+                </a>
+                <a href="trainings.html">
+                    Тренировки
+               </a>
+               <a href="coaches.html">
+                    Тренеры
+               </a>
+          </nav>
+          <header>
+               <div id = "slogan">
+                    <h1>
+                         Создай идеальную<br>версию себя
+                    </h1>     
+               </div>
+          </header>
+
+          <!-- Начало блока с основным содержимым -->
+           <div id = "main">
+               
+               <div id = "main_man">
+                    <img src = "img/main_man.jpg">
+               </div>
+               <p>
+                    <span style="color: #F8FF28;">НайкиПро</span> - это не просто клуб, а сообщество<br>единомышленников, для которых физическая<br>актвиность - это норма жизни.
+               </p>
+               <div id = "smart_info">
+                         <p><span style="color: #F8FF28;">100+</span><br>участников</p>
+                         <p><span style="color: #F8FF28;">10</span><br>тренеров</p>
+                         <p><span style="color: #F8FF28;">20+</span><br>программ</p>
+                         <p><span style="color: #F8FF28;">50</span><br>тренажеров</p>
+               </div>  
+          </div>
+          <div>
+               <h2 style="margin-left: 220px;">
+                    Почему выбирают нас?
+               </h2>
+
+               <table id="why_us">
+                    <tr>
+                        <td class="first-column" rowspan="2" style="text-align: right;"><img src="img/сообщество.png"></td>
+                        <td class="second-column" style="font-size: 30px; padding-bottom: 5px;"><a href="tariffs.html" style="margin: 0;">Дружелюбная<br>атмосфера</a></td>
+                        <td class="third-column" rowspan="2" style="text-align: right;"><img src="img/тренеры.png"></td>
+                        <td class="fourth-column" style="font-size: 30px;"><a href="coaches.html" style="margin: 0;">Опытные<br>тренеры</a></td>
+                    </tr>
+                    <tr>
+                        <td class="second-column" style="padding-right: 100px; padding-bottom: 20px;">Наш клуб — это место, где комфортно и приятно тренироваться, независимо от вашего уровня подготовки. Мы создаем условия, чтобы вам хотелось возвращаться снова и снова.</td>
+                        <td class="fourth-column" style="padding-right: 100px;">В нашем клубе работают сертифицированные специалисты с многолетним опытом, которые знают, как помочь вам достичь лучших результатов безопасно и эффективно.</td>
+                    </tr>
+                    <tr>
+                         <td class="first-column" rowspan="2" style="text-align: right;"><img src="img/программы.png"></td>
+                         <td class="second-column" style="font-size: 30px; padding-bottom: 5px;"><a href="trainings.html" style="margin: 0;">Разнообразие<br>тренировок</a></td>
+                         <td class="third-column" rowspan="2" style="text-align: right;"><img src="img/тренажеры.png"></td>
+                         <td class="fourth-column" style="font-size: 30px;">Современное<br>оборудование</td>
+                     </tr>
+                     <tr>
+                         <td class="second-column" style="padding-right: 100px; ">Йога, аэробика, функциональный тренинг, кардио и многое другое — каждый найдет занятия по душе и по уровню.</td>
+                         <td class="fourth-column" style="padding-right: 100px;">Мы оснащены новейшими тренажерами и спортивным инвентарем, которые делают ваши тренировки комфортными и продуктивными.</td>
+                     </tr>
+                </table>
+                
+           </div>
+
+
+
+
+           <footer>
+                <div class="smart_info">
+                    <div class="box">
+                         <a href="index.html"><img src = "img/лого.png" style = "height: 450; width: 1430;"></a><br>
+                         <p id = "footer_info">
+                              Все размещенные на сайте сведения носят информационный характер и ни при каких условиях не являются офертой по смыслу ст. 435 ГК РФ и не<br>являются публичной офертой по смыслу ст. 437 ГК РФ, если иное прямо не указано.
+                         </p>
+                    </div>
+                    <div class="box">
+                         <ul>
+                              <p>Ссылки</p>
+                              <li><a href="index.html">О нас</a></li>
+                              <li><a href="tariffs.html">Тарифы</a></li>
+                              <li><a href="trainings.html">Тренировки</a></li>
+                              <li><a href="coaches.html">Тренеры</a></li>
+                         </ul>
+                    </div>
+                    <div class="box">
+                         <ul>
+                              <p>Соц.сети</p>
+                              <p><a href="https://t.me/dushhenkaa">Telegram</a></p>
+                              <p><a href="m.vk.com">Вконтакте</a></p>
+                              <p><a href="m.youtube.com">YouTube</a></p>
+                              <p style="color: black;">!</p>
+                         </ul>
+                    </div>
+                    <div class="box">
+                         <ul></ul>
+                              <p>Контакты</p>
+                              <p style="font-size: 15px;">8 (919) 770 44 97</p>
+                              <p style="color: black;">!</p>
+                              <p style="color: black;">!</p>
+                              <p style="color: black;">!</p>
+                         </ul>
+                    </div>
+                </div> 
+                <!-- <div id = "smart_info"></div>
+                    <p>
+                         <h3><a href="index.html">НайкиПро</a> </h3>
+                    </p>
+                    <p id = "footer_info">
+                         Все размещенные на сайте сведения носят<br>информационный характер и ни при каких условиях<br>не являются офертой по смыслу ст. 435 ГК РФ и не<br>являются публичной офертой по смыслу ст. 437 ГК РФ,<br>если иное прямо не указано.
+                    </p>
+                         <ul>
+                              <p>Ссылки</p>
+                              <p><a href="index.html">О нас</a></p>
+                              <p><a href="tariffs.html">Тарифы</a></p>
+                              <p><a href="trainings.html">Тренировки</a></p>
+                              <p><a href="coaches.html">Тренеры</a></p>
+                         </ul>
+                    </p>
+                    <p>
+                         <ul>
+                              <p>Соц.сети</p>
+                              <p><a href="https://t.me/dushhenkaa">Telegram</a></p>
+                              <p><a href="m.vk.com">Вконтакте</a></p>
+                              <p><a href="m.youtube.com">YouTube</a></p>
+                              <p style="color: black;">!</p>
+                         </ul>
+                    </p>
+                    <p>
+                         <ul>
+                              <p>Контакты</p>
+                              <p style="font-size: 15px;">8 (919) 770 44 97</p>
+                              <p style="color: black;">!</p>
+                         </ul>
+                    </p>
+                    </div> -->
+           </footer>
+     </div> 
+</body>  
+</html>
