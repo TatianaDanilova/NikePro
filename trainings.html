@@ -80,8 +80,21 @@
         display: flex; /* Включаем flex-контейнер */
         justify-content: space-around; /* Равномерно распределяем элементы по горизонтали */
         align-items: center; /* Выравнивание по вертикали */
-       
     }
+    .box {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 20%; /* Ширина каждого элемента */
+}
+    .box img{
+     width: 255px;
+     height: 45px;
+     float: center;
+     margin-left: 10px;
+}
 
       </style>
  <title> 
@@ -119,39 +132,42 @@
            </div>
 
            <footer>
-               <div id = "smart_info">
-                    <p>
-                         <h3><a href="index.html">НайкиПро</a> </h3>
-                    </p>
-                    <p id = "footer_info">
-                         Все размещенные на сайте сведения носят<br>информационный характер и ни при каких условиях<br>не являются офертой по смыслу ст. 435 ГК РФ и не<br>являются публичной офертой по смыслу ст. 437 ГК РФ,<br>если иное прямо не указано.
-                    </p>
-                         <ul>
-                              <p>Ссылки</p>
-                              <p><a href="index.html">О нас</a></p>
-                              <p><a href="tariffs.html">Тарифы</a></p>
-                              <p><a href="trainings.html">Тренировки</a></p>
-                              <p><a href="coaches.html">Тренеры</a></p>
-                         </ul>
-                    </p>
-                    <p>
-                         <ul>
-                              <p>Соц.сети</p>
-                              <p><a href="https://t.me/dushhenkaa">Telegram</a></p>
-                              <p><a href="m.vk.com">Вконтакте</a></p>
-                              <p><a href="m.youtube.com">YouTube</a></p>
-                              <p style="color: black;">!</p>
-                         </ul>
-                    </p>
-                    <p>
-                         <ul>
-                              <p>Контакты</p>
-                              <p style="font-size: 15px;">8 (919) 770 44 97</p>
-                              <p style="color: black;">!</p>
-                         </ul>
-                    </p>
-                    </div>
-           </footer>
+               <div class="smart_info">
+                   <div class="box">
+                        <a href="index.html" ><img src = "img/лого.png"></a><br>
+                        <p id = "footer_info">
+                             Все размещенные на сайте сведения носят информационный характер и ни при каких условиях не являются офертой по смыслу ст. 435 ГК РФ и не являются публичной офертой по смыслу ст. 437 ГК РФ, если иное прямо не указано.
+                        </p>
+                   </div>
+                   <div class="box">
+                        <ul>
+                             <p>Ссылки</p>
+                             <li><a href="index.html">О нас</a></li>
+                             <li><a href="tariffs.html">Тарифы</a></li>
+                             <li><a href="trainings.html">Тренировки</a></li>
+                             <li><a href="coaches.html">Тренеры</a></li>
+                        </ul>
+                   </div>
+                   <div class="box">
+                        <ul>
+                             <p>Соц.сети</p>
+                             <p><a href="https://t.me/dushhenkaa">Telegram</a></p>
+                             <p><a href="m.vk.com">Вконтакте</a></p>
+                             <p><a href="m.youtube.com">YouTube</a></p>
+                             <p style="color: black;">!</p>
+                        </ul>
+                   </div>
+                   <div class="box">
+                        <ul>
+                             <p>Контакты</p>
+                             <p><a href="tel:+79197704497">8 (919) 770-44-97</a></p>
+                             <p><a href="tel:+79187450597">8 (918) 745-05-97</a></p>
+                             <p style="color: black;">!</p>
+                             <p style="color: black;">!</p>
+                        </ul>
+                   </div>
+               </div> 
+          </footer>
      </div> 
 </body>  
 </html>
