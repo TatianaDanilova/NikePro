@@ -1,0 +1,451 @@
+
+div#content{
+    width: 80;
+    border: none;
+    margin:auto;
+    background-color: black;
+    color: white;
+    font-family: 'Jura', sans-serif;
+    font-size: 30px;
+}
+
+/* Для навигации */
+nav{
+    height: 40px;
+    text-align: right;
+    margin-top: 30px;
+}
+nav a, table a{
+    font-weight: lighter;
+    text-decoration: none;
+    color: white;
+    margin: 60px;
+}
+nav img{
+    width: 255px;
+    height: 45px;
+    float: left;
+    margin-left: 60px;
+}
+
+/* Для подвала */
+footer{
+    border-top: 2px solid #F8FF28; /* Граница только сверху */
+    border-right: none; /* Убираем границы справа */
+    border-bottom: none; /* Убираем границы снизу */
+    border-left: none; /* Убираем границы слева */
+    margin-top: 100px;
+}
+header, footer {
+    color:white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+footer a{
+    font-weight: lighter;
+    text-decoration: none;
+    color: white;
+    margin: 0; 
+    font-size: 15px;
+}
+footer p{
+    margin: 0%;
+    text-align: center;
+}
+.footer_info{
+    font-size: 10px; 
+    text-align: left; 
+    margin-left: 30px;
+}
+.footer_links {
+    display: flex; /* Включаем Flexbox */
+    justify-content: space-between; /* Распределяем элементы по строке с равными отступами */
+    flex-wrap: wrap; /* Позволяет элементам переноситься на следующую строку, если не помещаются */
+}
+.box {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 20%; /* Ширина каждого элемента */
+}
+.box img{
+     width: 255px;
+     height: 45px;
+     float: center;
+     margin-left: 10px;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Главная страница !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* Главный блок */
+#main{
+    text-align: center;
+}
+div #main_man img{
+    width: 1430px;
+    height: 450px;
+    padding: 0%;
+}
+#smart_info{
+    display: flex; /* Включаем flex-контейнер */
+    justify-content: space-around; /* Равномерно распределяем элементы по горизонтали */
+    align-items: center; /* Выравнивание по вертикали */
+}
+
+/* Почему мы? */
+.whyUs{
+    border-bottom: 1px solid #F8FF28; /* Граница только сверху */
+    border-right: none; /* Убираем границы справа */
+    border-top: none; /* Убираем границы снизу */
+    border-left: none; /* Убираем границы слева */   
+    }
+table#why_us {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse; /* Убираем отступы между ячейками */
+}
+td {
+    border: none;
+    padding-top: 0px;
+    vertical-align: top;
+    height: auto;
+    font-size: 20px;
+    text-align: left;
+    position: relative;
+}
+table img{
+     margin: 15px;
+     width: 55px;
+     height: 55px;
+}
+.first-column, .third-column {
+    width: 10%; /* Ширина для первых и третьих столбцов */
+}
+
+.second-column, .fourth-column {
+    width: 35%; /* Ширина для вторых и четвертых столбцов */
+}
+ul {
+    list-style-type: none; /* Убираем стандартные маркеры списка */
+    padding-left: 0;
+    margin-top: 0;
+}
+
+/* Зоны клуба */
+.club-zone {
+    color: white;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: black;
+
+}
+.zone-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.zone-description {
+    width: 50%;
+}
+.zone-description p {
+    font-size: 28px;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+.zone-description h4 {
+    font-size: 40px;
+    color: #F8FF28;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.zone-images {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Тарифы !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* Карточки тарифов */
+table#tariffs{
+    flex-wrap: nowrap;
+    width: auto;
+    margin: auto;
+    border-collapse: separate; /* Включаем отдельные границы ячеек */
+    border-spacing: 20px; /* Отступы между столбцами и строками */
+}
+#tariffs td {
+    border: 2px solid white;
+    padding: 20px;
+    vertical-align: bottom;
+    height: auto;
+    width: 33%; /* Выравниваем ширину столбцов */
+    position: relative;
+}
+#light_tarif{
+    text-align: left;
+    border: 2px solid white;
+    height: 300px;
+    padding: 20px;
+}
+#pro_tarif{
+    text-align: left;
+    border: 2px solid #F8FF28;
+    position: relative; /* Обязательно добавляем это, чтобы работал `top` */
+    
+}
+#tarif_info{
+    font-size: 15px;
+}
+#not{
+    color: darkgray;
+}
+#buy {
+    background-color: #F8FF28;
+    border: none;
+    padding: 10px 100px;
+    cursor: pointer;
+    color: black;
+    font-size: 16px;
+    font-family: "Jura";
+    margin: 20px auto;
+    }
+#tariffs ul {
+    list-style-type: none; /* Убираем стандартные маркеры списка */
+    padding-left: 0;
+}
+li.check::before {
+    content: "✓"; /* Символ галочки (Unicode) */
+    color: #F8FF28;
+    font-weight: bold;
+    margin-right: 10px;
+}
+li.cross::before {
+    content: "𐄂"; /* Символ крестика (Unicode) */
+    color: darkgray;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Форма */
+form {
+    width: 500px; /* Ширина формы */
+    margin: auto; /* Выравнивание формы по центру */
+    padding: 0px;
+    background-color: black; /* Фон формы */
+}
+.input-field {
+     /* Поля ввода занимают всю ширину формы */
+    padding: 10px 70px;
+    border: 1px solid white;
+    background-color: black;
+    color: white; /* Цвет текста */
+    font-size: 16px;
+    font-family: "Jura";
+    text-align: center;
+    margin: 5px auto;
+}
+.input-field:focus {
+    border-color: #F8FF28; /* Изменение цвета границы при фокусе */
+    outline: none; /* Убираем стандартную обводку */
+}
+
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Тренеры !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* Карточки персональных тренеров */
+.carousel-container {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.card {
+    width: 450px;
+    height: 500px;
+    margin: 0 10px;
+    perspective: 1000px; /* Добавляем перспективу для 3D эффекта */
+}
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+.card:hover .card-inner {
+    transform: rotateY(180deg); /* При наведении карта переворачивается */
+}
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    backface-visibility: hidden; /* Скрываем обратную сторону, пока не перевернута */
+    border: 2px solid #F8FF28;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card-front img {
+    width: 100%;
+    height: auto;
+}
+.card-front .name {
+    font-size: 24px;
+    color: white;
+    margin-top: 15px;
+}
+.card-back {
+    background-color: black;
+    transform: rotateY(180deg);
+    text-align: left;
+    
+}
+.card-back h4 {
+    color: white;
+    margin-bottom: 0;
+    padding: 0;
+    
+}
+.card-back p {
+    color: white;
+    margin-bottom: 0;
+    text-align: left;
+    padding: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+.card-back ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+.card-back ul li {
+    margin: 5px 0;
+    font-size: 18px;
+}
+.card-back ul li:before {
+    content: "•";
+    color: #F8FF28;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Карточки тренеров групповых программ */
+.new-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0; /* Отступы вокруг контейнера */
+}
+
+.new-card {
+    position: relative;
+    width: 250px; /* Ширина карточки */
+    height: 350px; /* Высота карточки */
+    margin: 10px; /* Отступы между карточками */
+    perspective: 1000px; /* Для эффекта переворачивания */
+    overflow: hidden; /* Прячем содержимое за границами карточки */
+}
+
+.new-card-front,
+.new-card-back {
+    width: 98%;
+    height: 90%;
+    border: 2px solid white;
+    position: absolute;
+    text-align: center;
+    backface-visibility: hidden; /* Скрываем обратную сторону */
+    transition: transform 0.6s; /* Плавный переход при повороте */
+}
+
+.new-card-front {
+    background-color: black; /* Цвет передней стороны карточки */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    
+}
+
+.new-card-back {
+    background-color: black; /* Цвет задней стороны карточки */
+    color: white; /* Цвет текста на задней стороне */
+    transform: rotateY(180deg); /* Поворачиваем заднюю сторону */
+    font-size: 18px;
+}
+.new-card-back p {
+            color: white;
+            margin-bottom: 0;
+            text-align: center;
+            padding: 0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .new-card-back ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin-left: 40px;
+            text-align: left;
+
+        }
+
+        .new-card-back ul li {
+            margin: 5px 0;
+            font-size: 18px;
+        }
+
+        .new-card-back ul li:before {
+            content: "•";
+            color: #F8FF28;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+
+.new-card:hover .new-card-front {
+    transform: rotateY(180deg); /* Поворачиваем переднюю сторону */
+}
+
+.new-card:hover .new-card-back {
+    transform: rotateY(360deg); /* Поворачиваем заднюю сторону */
+}
+
+.new-card img {
+    width: 90%; /* Ширина изображения */
+    height: 75%; /* Высота изображения */
+    object-fit: cover; /* Соотношение сторон изображения */
+}
+
+.contact-btn {
+    background-color: #F8FF28; /* Цвет кнопки */
+    color: black; /* Цвет текста кнопки */
+    font-size: 12px; /* Размер шрифта */
+    padding: 10px 15px; /* Отступы кнопки */
+    border: none; /* Без границы */
+    cursor: pointer; /* Указатель при наведении */
+    margin-top: 10px; /* Отступ сверху */
+    font-family: "Jura";
+    font-weight: bold;
+    
+}
+.contact-btn a{
+     text-decoration: none;
+     color: black;
+}

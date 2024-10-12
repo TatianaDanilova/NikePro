@@ -1,344 +1,27 @@
 <!DOCTYPE html> 
 <html> 
 <head> 
- <meta http-equiv = "Content-Type" 
+<meta http-equiv = "Content-Type" 
       content = "text/html; charset = utf-8" > 
       
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
-      <style>
-          div#content{
-               width: 80;
-               border: none;
-               margin:auto;
-               background-color: black;
-               color: white;
-               font-family: 'Jura', sans-serif;
-               font-size: 30px;
-          }
+     <link rel="stylesheet" href="css/style.css">
 
-          header, footer {
-               color:white;
-               background-color: black;
-               clear: left;
-               text-align: center;
-          }
-
-          nav{
-               height: 40px;
-               text-align: right;
-               margin-top: 30px;
-          }
-
-          nav a{
-               font-weight: lighter;
-               text-decoration: none;
-               color: white;
-               margin: 60px;
-          }
-
-          footer a{
-               font-weight: lighter;
-               text-decoration: none;
-               color: white;
-               margin: 30px; 
-               font-size: 15px;
-          }
-
-          footer p{
-               margin: 0%;
-               text-align: center;
-          }
-
-          #main{
-               padding: 1em;
-               text-align: center;
-               
-          }
-          
-
-          div #main_man img{
-               width: 1430px;
-               height: 450px;
-               padding: 0%;
-          }
-
-          nav img{
-               width: 255px;
-               height: 45px;
-               float: left;
-               margin-left: 60px;
-          }
-
-          #slogan{
-               font-size: 32px;
-          }
-
-          #footer_info{
-               font-size: 10px;
-          }
-          .smart_info {
-    display: flex; /* Включаем Flexbox */
-    justify-content: space-between; /* Распределяем элементы по строке с равными отступами */
-    flex-wrap: wrap; /* Позволяет элементам переноситься на следующую строку, если не помещаются */
-}
-    
-    .first-column, .third-column {
-    width: 10%; /* Ширина для первых и третьих столбцов */
-}
-
-.second-column, .fourth-column {
-    width: 35%; /* Ширина для вторых и четвертых столбцов */
-}
-
-td p {
-    margin: 0; /* Убираем отступы внутри p-элементов, если они есть */
-}
-
-ul {
-               list-style-type: none; /* Убираем стандартные маркеры списка */
-               padding-left: 0;
-               margin-top: 0;
-          }
-    .box {
-    background-color: black;
-    color: white;
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
-    width: 20%; /* Ширина каждого элемента */
-}
-    .box img{
-     width: 255px;
-     height: 45px;
-     float: center;
-     margin-left: 10px;
-}
-
-    .carousel-container {
-            position: relative;
-            width: 90%;
-            margin: auto;
-            overflow: hidden;
-        }
-
-        .carousel {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-        }
-
-        .card {
-            width: 450px;
-            height: 500px;
-            margin: 0 10px;
-            perspective: 1000px; /* Добавляем перспективу для 3D эффекта */
-        }
-        
-
-        .card-inner {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            transition: transform 0.8s;
-            transform-style: preserve-3d;
-            cursor: pointer;
-        }
-
-        .card:hover .card-inner {
-            transform: rotateY(180deg); /* При наведении карта переворачивается */
-        }
-
-        .card-front, .card-back {
-            position: absolute;
-            width: 100%;
-            height: 90%;
-            backface-visibility: hidden; /* Скрываем обратную сторону, пока не перевернута */
-            border: 2px solid #F8FF28;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
-        
-
-        .card-front {
-            background-color: black;
-        }
-
-        .card-front img {
-            width: 100%;
-            height: auto;
-        }
-
-        .card-front .name {
-            font-size: 24px;
-            color: white;
-            margin-top: 15px;
-        }
-
-        .card-back {
-            background-color: black;
-            transform: rotateY(180deg);
-            text-align: left;
-            
-        }
-
-        .card-back h4 {
-            color: white;
-            margin-bottom: 0;
-            padding: 0;
-            
-        }
-
-        .card-back p {
-            color: white;
-            margin-bottom: 0;
-            text-align: left;
-            padding: 0;
-            font-size: 20px;
-            font-weight: bold;
-        }
-
-        .card-back ul {
-            list-style-type: none;
-            padding-left: 0;
-            margin: 0;
-        }
-
-        .card-back ul li {
-            margin: 5px 0;
-            font-size: 18px;
-        }
-
-        .card-back ul li:before {
-            content: "•";
-            color: #F8FF28;
-            font-weight: bold;
-            display: inline-block;
-            width: 1em;
-            margin-left: -1em;
-        }
-        .new-card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 20px 0; /* Отступы вокруг контейнера */
-}
-
-.new-card {
-    position: relative;
-    width: 250px; /* Ширина карточки */
-    height: 350px; /* Высота карточки */
-    margin: 10px; /* Отступы между карточками */
-    perspective: 1000px; /* Для эффекта переворачивания */
-    overflow: hidden; /* Прячем содержимое за границами карточки */
-}
-
-.new-card-front,
-.new-card-back {
-    width: 98%;
-    height: 90%;
-    border: 2px solid white;
-    position: absolute;
-    text-align: center;
-    backface-visibility: hidden; /* Скрываем обратную сторону */
-    transition: transform 0.6s; /* Плавный переход при повороте */
-}
-
-.new-card-front {
-    background-color: black; /* Цвет передней стороны карточки */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-    
-}
-
-.new-card-back {
-    background-color: black; /* Цвет задней стороны карточки */
-    color: white; /* Цвет текста на задней стороне */
-    transform: rotateY(180deg); /* Поворачиваем заднюю сторону */
-    font-size: 18px;
-}
-.new-card-back p {
-            color: white;
-            margin-bottom: 0;
-            text-align: center;
-            padding: 0;
-            font-size: 18px;
-            font-weight: bold;
-        }
-        .new-card-back ul {
-            list-style-type: none;
-            padding-left: 0;
-            margin-left: 40px;
-            text-align: left;
-
-        }
-
-        .new-card-back ul li {
-            margin: 5px 0;
-            font-size: 18px;
-        }
-
-        .new-card-back ul li:before {
-            content: "•";
-            color: #F8FF28;
-            font-weight: bold;
-            display: inline-block;
-            width: 1em;
-            margin-left: -1em;
-        }
-
-
-.new-card:hover .new-card-front {
-    transform: rotateY(180deg); /* Поворачиваем переднюю сторону */
-}
-
-.new-card:hover .new-card-back {
-    transform: rotateY(360deg); /* Поворачиваем заднюю сторону */
-}
-
-.new-card img {
-    width: 90%; /* Ширина изображения */
-    height: 75%; /* Высота изображения */
-    object-fit: cover; /* Соотношение сторон изображения */
-}
-
-.contact-btn {
-    background-color: #F8FF28; /* Цвет кнопки */
-    color: black; /* Цвет текста кнопки */
-    font-size: 12px; /* Размер шрифта */
-    padding: 10px 15px; /* Отступы кнопки */
-    border: none; /* Без границы */
-    cursor: pointer; /* Указатель при наведении */
-    margin-top: 10px; /* Отступ сверху */
-    font-family: "Jura";
-    font-weight: bold;
-    
-}
-.contact-btn a{
-     text-decoration: none;
-     color: black;
-}
-    </style>
- <title> 
-     Фитнес-клуб "НайкиПро"
- </title> 
+    <title> 
+        Фитнес-клуб "НайкиПро"
+    </title> 
 </head> 
+
 <body style="background-color: black;"> 
-     <div id = "content">
-          <!-- Начало блока маню страницы -->
-          <nav>
+    <div id = "content">
+
+        <nav>
                <a href="index.html"><img src = "img/лого.png"></a>
-     <!-- Гиперссылка на главную страницу сайта -->
                <a href="index.html">
                     О нас
                </a>
-               <!-- гиперссылки на другие страницы -->
                 <a href="tariffs.html">
                     Тарифы
                 </a>
@@ -348,268 +31,252 @@ ul {
                <a href="coaches.html" style="color: #F8FF28;">
                     Тренеры
                </a>
-          </nav>
-          <header>
-              
-          </header>
+        </nav>
 
-          <!-- Начало блока с основным содержимым -->
-           <div id = "main">
-               <h1>
-                    Доверься <span style="color: #F8FF28;">профессионалам</span> - <br>тренируйся с лучшими
-               </h1>
-               <h2>
-                    Персональные тренеры
-               </h2>
-           </div>
-           <div class="carousel-container">
-               <div class="carousel">
-                   <!-- Карточка 1 -->
-                   <div class="card">
-                       <div class="card-inner">
-                           <!-- Передняя сторона карточки -->
-                           <div class="card-front">
-                               <img src="img/coach1.png" alt="Данилова Татьяна">
-                               <div class="name">Татьяна Данилова</div>
-                           </div>
-                           <!-- Задняя сторона карточки -->
-                           <div class="card-back">
-                               <h4>Татьяна Данилова</h4>
-                               <p>Специализация</p>
-                               <ul>
-                                   <li>силовые тренировки</li>
-                                   <li>набор мышечной массы</li>
-                                   <li>снижение веса</li>
-                                   <li>коррекция фигуры</li>
-                               </ul>
-                               <p>Спортивные достижения</p>
-                               <ul>
-                                   <li>МС по подъему на бицепс</li>
-                                   <li>Элита России по жиму</li>
-                               </ul>
-                               <button class="contact-btn">СВЯЗАТЬСЯ</button>
-                           </div>
-                       </div>
-                   </div>
-       
-                   <!-- Карточка 2 -->
-                   <div class="card">
-                       <div class="card-inner">
-                           <!-- Передняя сторона карточки -->
-                           <div class="card-front">
-                               <img src="img/coach3.png" alt="Даниил Синюков">
-                               <div class="name">Даниил Синюков</div>
-                           </div>
-                           <!-- Задняя сторона карточки -->
-                           <div class="card-back">
-                              <h4>Даниил Синюков</h4>
-                              <p>Специализация</p>
-                              <ul>
-                                  <li>силовые тренировки</li>
-                                  <li>набор мышечной массы</li>
-                                  <li>консультация по питанию</li>
-                                  <li>коррекция фигуры</li>
-                              </ul>
-                              <p>Спортивные достижения</p>
-                              <ul>
-                                  <li>КМС по рукопашному бою</li>
-                                  <li>МС по пауэрлифтингу</li>
-                              </ul>
-                              <button class="contact-btn">СВЯЗАТЬСЯ</button>
-                          </div>
-                       </div>
-                   </div>
-               <!-- Карточка 3 -->
-               <div class="card">
+        <header>
+            <h1>
+                Доверься <span style="color: #F8FF28;">профессионалам</span> - <br>тренируйся с лучшими
+           </h1>
+        </header>
+
+        <h2 style="text-align: center;">
+            Персональные тренеры
+        </h2>
+        
+        <div class="carousel-container">
+            <div class="carousel">
+                <!-- Карточка 1 -->
+                <div class="card">
                     <div class="card-inner">
-                    <!-- Передняя сторона карточки -->
+                        <div class="card-front">
+                            <img src="img/coach1.png" alt="Данилова Татьяна">
+                            <div class="name">Татьяна Данилова</div>
+                        </div>
+                        <div class="card-back">
+                            <h4>Татьяна Данилова</h4>
+                            <p>Специализация</p>
+                            <ul>
+                                <li>силовые тренировки</li>
+                                <li>набор мышечной массы</li>
+                                <li>снижение веса</li>
+                                <li>коррекция фигуры</li>
+                            </ul>
+                            <p>Спортивные достижения</p>
+                            <ul>
+                                <li>МС по подъему на бицепс</li>
+                                <li>Элита России по жиму</li>
+                            </ul>
+                            <button class="contact-btn">СВЯЗАТЬСЯ</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Карточка 2 -->
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="img/coach3.png" alt="Даниил Синюков">
+                            <div class="name">Даниил Синюков</div>
+                        </div>
+                        <div class="card-back">
+                            <h4>Даниил Синюков</h4>
+                            <p>Специализация</p>
+                            <ul>
+                                <li>силовые тренировки</li>
+                                <li>набор мышечной массы</li>
+                                <li>консультация по питанию</li>
+                                <li>коррекция фигуры</li>
+                            </ul>
+                            <p>Спортивные достижения</p>
+                            <ul>
+                                <li>КМС по рукопашному бою</li>
+                                <li>МС по пауэрлифтингу</li>
+                            </ul>
+                            <button class="contact-btn">СВЯЗАТЬСЯ</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Карточка 3 -->
+                <div class="card">
+                    <div class="card-inner">
                     <div class="card-front">
                          <img src="img/coach2.png" alt="Лысенко Ярослав">
                          <div class="name">Ярослав Лысенко</div>
                     </div>
-                    <!-- Задняя сторона карточки -->
                     <div class="card-back">
-                         <h4>Ярослав Лысенко</h4>
-                         <p>Специализация</p>
-                         <ul>
-                              <li>силовые тренировки</li>
-                              <li>набор мышечной массы</li>
-                              <li>постановка техники</li>
-                              <li>развитие выносливости</li>
-                         </ul>
+                        <h4>Ярослав Лысенко</h4>
+                        <p>Специализация</p>
+                        <ul>
+                            <li>силовые тренировки</li>
+                            <li>набор мышечной массы</li>
+                            <li>постановка техники</li>
+                            <li>развитие выносливости</li>
+                        </ul>
                          <p>Спортивные достижения</p>
-                              <ul>
-                                  <li>ЗМС по жиму штанги лежа</li>
-                                  <li>МС по боксу</li>
-                              </ul>
-                         <button class="contact-btn">СВЯЗАТЬСЯ</button>
+                            <ul>
+                                <li>ЗМС по жиму штанги лежа</li>
+                                <li>МС по боксу</li>
+                            </ul>
+                        <button class="contact-btn">СВЯЗАТЬСЯ</button>
                     </div>
+                </div>
+            </div>
+                    <!-- Карточка 4 -->
+                    <div class="card">
+                        <div class="card-inner">
+                        <div class="card-front">
+                            <img src="img/coach4.jpg" alt="Ржанникова Лада">
+                            <div class="name">Лада Ржанникова</div>
+                        </div>
+                        <div class="card-back">
+                            <h4>Лада Ржанникова</h4>
+                            <p>Специализация</p>
+                            <ul>
+                                <li>силовые тренировки</li>
+                                <li>набор мышечной массы</li>
+                                <li>снижение веса</li>
+                                <li>коррекция фигуры</li>
+                            </ul>
+                            <p>Спортивные достижения</p>
+                                <ul>
+                                    <li>МС по подъему на бицепс</li>
+                                    <li>Элита России по жиму</li>
+                                </ul>
+                            <button class="contact-btn">СВЯЗАТЬСЯ</button>
+                        </div>
                     </div>
-               </div>
+                </div>
+            </div>
+        </div>
 
-               <!-- Карточка 4 -->
-               <div class="card">
-                    <div class="card-inner">
-                    <!-- Передняя сторона карточки -->
-                    <div class="card-front">
-                         <img src="img/coach4.jpg" alt="Ржанникова Лада">
-                         <div class="name">Лада Ржанникова</div>
-                    </div>
-                    <!-- Задняя сторона карточки -->
-                    <div class="card-back">
-                         <h4>Лада Ржанникова</h4>
-                         <p>Специализация</p>
-                         <ul>
-                              <li>силовые тренировки</li>
-                              <li>набор мышечной массы</li>
-                              <li>снижение веса</li>
-                              <li>коррекция фигуры</li>
-                         </ul>
-                         <p>Спортивные достижения</p>
-                               <ul>
-                                   <li>МС по подъему на бицепс</li>
-                                   <li>Элита России по жиму</li>
-                               </ul>
-                         <button class="contact-btn">СВЯЗАТЬСЯ</button>
-                    </div>
-                    </div>
-               </div>
-                   <!-- Добавьте другие карточки по тому же принципу -->
-               </div>
-           </div>
+        <h3 style="text-align: center;">
+            Тренеры групповых программ
+        </h3>
 
-<!--------------------------------------------------------------------------------------------------------------------------------------------->
-          <h3 style="text-align: center;">
-               Тренеры групповых программ
-          </h3>
-          <div class="new-card-container">
-               <div class="new-card">
-                   <div class="new-card-front">
+        <div class="new-card-container">
+            <div class="new-card">
+                <div class="new-card-front">
                        <img src="img/coachpro1.png" alt="Оксана Лучшева">
                        <h3>Оксана Лучшева</h3>
-                   </div>
-                   <div class="new-card-back">
-                       <h3>Оксана Лучшева</h3>
-                       <p>Специализация</p>
-                       <ul>
-                           <li>йога</li>
-                           <li>ZUMBA</li>
-                           <li>стретчинг</li>
-                           <li>силовые тренировки</li>
-                       </ul>
-                       <button class="contact-btn"><a href="trainings.html">ПЕРЕЙТИ К ПРОГРАММАМ</a></button>
-                   </div>
-               </div>
-               <div class="new-card">
-                   <div class="new-card-front">
+                </div>
+                <div class="new-card-back">
+                    <h3>Оксана Лучшева</h3>
+                    <p>Специализация</p>
+                    <ul>
+                        <li>йога</li>
+                        <li>ZUMBA</li>
+                        <li>стретчинг</li>
+                        <li>силовые тренировки</li>
+                    </ul>
+                    <button class="contact-btn"><a href="trainings.html">ПЕРЕЙТИ К ПРОГРАММАМ</a></button>
+                </div>
+            </div>
+            <div class="new-card">
+                <div class="new-card-front">
                        <img src="img/coachpro3.webp" alt="Тренер 2">
                        <h3>Марина Неборсина</h3>
-                   </div>
-                   <div class="new-card-back">
-                       <h3>Марина Неборсина</h3>
-                       <p>Специализация</p>
-                       <ul>
-                           <li>йога</li>
-                           <li>ZUMBA</li>
-                           <li>стретчинг</li>
-                           <li>силовые тренировки</li>
-                       </ul>
-                       <button class="contact-btn"><a href="trainings.html">ПЕРЕЙТИ К ПРОГРАММАМ</a></button>
-                   </div>
-               </div>
-               <div class="new-card">
-                   <div class="new-card-front">
+                </div>
+                <div class="new-card-back">
+                    <h3>Марина Неборсина</h3>
+                    <p>Специализация</p>
+                    <ul>
+                        <li>йога</li>
+                        <li>ZUMBA</li>
+                        <li>стретчинг</li>
+                        <li>силовые тренировки</li>
+                    </ul>
+                    <button class="contact-btn"><a href="trainings.html">ПЕРЕЙТИ К ПРОГРАММАМ</a></button>
+                </div>
+            </div>
+            <div class="new-card">
+                <div class="new-card-front">
                        <img src="img/coachpro2.png" alt="Тренер 3">
                        <h3>Алексей Кравченко</h3>
-                   </div>
-                   <div class="new-card-back">
-                       <h3>Алексей Кравченко</h3>
-                       <p>Специализация</p>
-                       <ul>
-                           <li>йога</li>
-                           <li>ZUMBA</li>
-                           <li>стретчинг</li>
-                           <li>силовые тренировки</li>
-                       </ul>
-                       <button class="contact-btn"><a href="trainings.html">ПЕРЕЙТИ К ПРОГРАММАМ</a></button>
-                   </div>
-               </div>
-               <div class="new-card">
-                   <div class="new-card-front">
+                </div>
+                <div class="new-card-back">
+                    <h3>Алексей Кравченко</h3>
+                    <p>Специализация</p>
+                    <ul>
+                        <li>йога</li>
+                        <li>ZUMBA</li>
+                        <li>стретчинг</li>
+                        <li>силовые тренировки</li>
+                    </ul>
+                    <button class="contact-btn"><a href="trainings.html">ПЕРЕЙТИ К ПРОГРАММАМ</a></button>
+                </div>
+            </div>
+            <div class="new-card">
+                <div class="new-card-front">
                        <img src="img/coachpro4.jpg" alt="Кристина Лихачева">
                        <h3>Кристина Лихачева</h3>
-                   </div>
-                   <div class="new-card-back">
-                       <h3>Кристина Лихачева</h3>
-                       <p>Специализация</p>
-                       <ul>
-                           <li>йога</li>
-                           <li>ZUMBA</li>
-                           <li>стретчинг</li>
-                           <li>силовые тренировки</li>
-                       </ul>
-                       <button class="contact-btn"><a href="trainings.html">ПЕРЕЙТИ К ПРОГРАММАМ</a></button>
-                   </div>
-               </div>
-               <div class="new-card">
-                   <div class="new-card-front">
+                </div>
+                <div class="new-card-back">
+                    <h3>Кристина Лихачева</h3>
+                    <p>Специализация</p>
+                    <ul>
+                        <li>йога</li>
+                        <li>ZUMBA</li>
+                        <li>стретчинг</li>
+                        <li>силовые тренировки</li>
+                    </ul>
+                    <button class="contact-btn"><a href="trainings.html">ПЕРЕЙТИ К ПРОГРАММАМ</a></button>
+                </div>
+            </div>
+            <div class="new-card">
+                <div class="new-card-front">
                        <img src="img/coachpro5.jpg" alt="Дмитрий Медведев">
                        <h3>Дмитрий Медведев</h3>
-                   </div>
-                   <div class="new-card-back">
-                       <h3>Дмитрий Медведев</h3>
-                       <p>Специализация</p>
-                       <ul>
-                           <li>йога</li>
-                           <li>ZUMBA</li>
-                           <li>стретчинг</li>
-                           <li>силовые тренировки</li>
-                       </ul>
-                       <button class="contact-btn"><a href="trainings.html">ПЕРЕЙТИ К ПРОГРАММАМ</a></button>
-                   </div>
-               </div>
+                </div>
+                <div class="new-card-back">
+                    <h3>Дмитрий Медведев</h3>
+                    <p>Специализация</p>
+                    <ul>
+                        <li>йога</li>
+                        <li>ZUMBA</li>
+                        <li>стретчинг</li>
+                        <li>силовые тренировки</li>
+                    </ul>
+                    <button class="contact-btn"><a href="trainings.html">ПЕРЕЙТИ К ПРОГРАММАМ</a></button>
+                </div>
+            </div>
+        </div> 
 
-           </div>
-           
-           
-           </div>
-           <footer>
-               <div class="smart_info">
-                   <div class="box">
-                        <a href="index.html" ><img src = "img/лого.png"></a><br>
-                        <p id = "footer_info">
-                             Все размещенные на сайте сведения носят информационный характер и ни при каких условиях не являются офертой по смыслу ст. 435 ГК РФ и не являются публичной офертой по смыслу ст. 437 ГК РФ, если иное прямо не указано.
-                        </p>
-                   </div>
-                   <div class="box">
-                        <ul>
-                             <p>Ссылки</p>
-                             <li><a href="index.html">О нас</a></li>
-                             <li><a href="tariffs.html">Тарифы</a></li>
-                             <li><a href="trainings.html">Тренировки</a></li>
-                             <li><a href="coaches.html">Тренеры</a></li>
-                        </ul>
-                   </div>
-                   <div class="box">
-                        <ul>
-                             <p>Соц.сети</p>
-                             <p><a href="https://t.me/dushhenkaa">Telegram</a></p>
-                             <p><a href="m.vk.com">Вконтакте</a></p>
-                             <p><a href="m.youtube.com">YouTube</a></p>
-                             <p style="color: black;">!</p>
-                        </ul>
-                   </div>
-                   <div class="box">
-                        <ul>
-                             <p>Контакты</p>
-                             <p><a href="tel:+79197704497">8 (919) 770-44-97</a></p>
-                             <p><a href="tel:+79187450597">8 (918) 745-05-97</a></p>
-                             <p style="color: black;">!</p>
-                             <p style="color: black;">!</p>
-                        </ul>
-                   </div>
-               </div> 
-          </footer>
-     </div> 
+        <footer>
+            <div class="footer_links">
+                <div class="box">
+                     <a href="index.html" ><img src = "img/лого.png"></a><br>
+                     <p class="footer_info">
+                          Все размещенные на сайте сведения носят информационный характер и ни при каких условиях не являются офертой по смыслу ст. 435 ГК РФ и не являются публичной офертой по смыслу ст. 437 ГК РФ, если иное прямо не указано.
+                     </p>
+                </div>
+                <div class="box">
+                    <ul>
+                        <p>Ссылки</p>
+                        <li><a href="index.html">О нас</a></li>
+                        <li><a href="tariffs.html">Тарифы</a></li>
+                        <li><a href="trainings.html">Тренировки</a></li>
+                        <li><a href="coaches.html">Тренеры</a></li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <ul>
+                        <p>Соц.сети</p>
+                        <p><a href="https://t.me/dushhenkaa">Telegram</a></p>
+                        <p><a href="m.vk.com">Вконтакте</a></p>
+                        <p><a href="m.youtube.com">YouTube</a></p>
+                        <p style="color: black;">!</p>
+                    </ul>
+                </div>
+                <div class="box">
+                    <ul>
+                        <p>Контакты</p>
+                        <p><a href="tel:+79197704497">8 (919) 770-44-97</a></p>
+                        <p><a href="tel:+79187450597">8 (918) 745-05-97</a></p>
+                        <p style="color: black;">!</p>
+                        <p style="color: black;">!</p>
+                    </ul>
+                </div>
+            </div> 
+        </footer>
+    </div> 
 </body>  
 </html>

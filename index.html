@@ -1,216 +1,26 @@
 <!DOCTYPE html> 
 <html> 
 <head> 
- <meta http-equiv = "Content-Type" 
+<meta http-equiv = "Content-Type" 
       content = "text/html; charset = utf-8" > 
       
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
-      <style>
-          div#content{
-               width: 80;
-               border: none;
-               margin:auto;
-               background-color: black;
-               color: white;
-               font-family: 'Jura', sans-serif;
-               font-size: 30px;
-          }
-
-          footer{
-               border-top: 2px solid #F8FF28; /* Граница только сверху */
-               border-right: none; /* Убираем границы справа */
-               border-bottom: none; /* Убираем границы снизу */
-               border-left: none; /* Убираем границы слева */
-               margin-top: 100px;
-          }
-          header, footer {
-               color:white;
-               background-color: black;
-               clear: left;
-               text-align: center;
-          }
-
-          nav{
-               height: 40px;
-               text-align: right;
-               margin-top: 30px;
-          }
-
-          nav a, table a{
-               font-weight: lighter;
-               text-decoration: none;
-               color: white;
-               margin: 60px;
-          }
-
-          footer a{
-               font-weight: lighter;
-               text-decoration: none;
-               color: white;
-               margin: 0; 
-               font-size: 15px;
-          }
-
-          footer p{
-               margin: 0%;
-               text-align: center;
-          }
-
-          #main{
-               text-align: center;
-               
-
-          }
-
-          div #main_man img{
-               width: 1430px;
-               height: 450px;
-               padding: 0%;
-          }
-
-          nav img{
-               width: 255px;
-               height: 45px;
-               float: left;
-               margin-left: 60px;
-          }
-
-          #slogan{
-               font-size: 32px;
-          }
-
-          #footer_info{
-               font-size: 10px;
-          }
-          #smart_info{
-        display: flex; /* Включаем flex-контейнер */
-        justify-content: space-around; /* Равномерно распределяем элементы по горизонтали */
-        align-items: center; /* Выравнивание по вертикали */
-    }
-
-    .whyUs{
-     border-bottom: 1px solid #F8FF28; /* Граница только сверху */
-     border-right: none; /* Убираем границы справа */
-     border-top: none; /* Убираем границы снизу */
-     border-left: none; /* Убираем границы слева */   
-     }
-    table#why_us {
-    width: 80%;
-    margin: auto;
-    border-collapse: collapse; /* Убираем отступы между ячейками */
-}
-
-td {
-    border: none;
-    padding-top: 0px;
-    vertical-align: top;
-    height: auto;
-    font-size: 20px;
-    text-align: left;
-    position: relative;
-}
-table img{
-     margin: 15px;
-     width: 55px;
-     height: 55px;
-}
-
-.first-column, .third-column {
-    width: 10%; /* Ширина для первых и третьих столбцов */
-}
-
-.second-column, .fourth-column {
-    width: 35%; /* Ширина для вторых и четвертых столбцов */
-}
-
-td p {
-    margin: 0; /* Убираем отступы внутри p-элементов, если они есть */
-}
-
-ul {
-               list-style-type: none; /* Убираем стандартные маркеры списка */
-               padding-left: 0;
-               margin-top: 0;
-          }
-
-          .smart_info {
-    display: flex; /* Включаем Flexbox */
-    justify-content: space-between; /* Распределяем элементы по строке с равными отступами */
-    flex-wrap: wrap; /* Позволяет элементам переноситься на следующую строку, если не помещаются */
-}
-
-.box {
-    background-color: black;
-    color: white;
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
-    width: 20%; /* Ширина каждого элемента */
-}
-.box img{
-     width: 255px;
-     height: 45px;
-     float: center;
-     margin-left: 10px;
-}
-
-.club-zone {
-    color: white;
-    padding-left: 100px;
-    padding-right: 100px;
-    background-color: black;
-
-}
-
-.zone-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.zone-description {
-    width: 50%;
-}
-
-.zone-description p {
-    font-size: 32px;
-    line-height: 1;
-    margin-bottom: 20px;
-}
-
-.zone-description h4 {
-     font-size: 35px;
-    color: #F8FF28;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-.zone-images {
-    width: 45%;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-
-
-      </style>
- <title> 
-     Фитнес-клуб "НайкиПро"
- </title> 
+     <link rel="stylesheet" href="css/style.css">
+ 
+     <title> 
+          Фитнес-клуб "НайкиПро"
+     </title> 
 </head> 
+
 <body style="background-color: black;"> 
      <div id = "content">
-          <!-- Начало блока маню страницы -->
           <nav>
-               <a href="index.html"><img src = "img/лого.png"></a>
-     <!-- Гиперссылка на главную страницу сайта -->
+               <a href="index.html"><img src = "img/лого.png">
                <a href="index.html" style="color: #F8FF28;">
                     О нас
                </a>
-               <!-- гиперссылки на другие страницы -->
                 <a href="tariffs.html">
                     Тарифы
                 </a>
@@ -221,17 +31,16 @@ ul {
                     Тренеры
                </a>
           </nav>
+
           <header>
-               <div id = "slogan">
+               <div>
                     <h1>
                          Создай идеальную<br>версию себя
                     </h1>     
                </div>
           </header>
 
-          <!-- Начало блока с основным содержимым -->
-           <div id = "main">
-               
+          <div id = "main">
                <div id = "main_man">
                     <img src = "img/main_man.jpg">
                </div>
@@ -245,11 +54,11 @@ ul {
                          <p><span style="color: #F8FF28;">50</span><br>тренажеров</p>
                </div>  
           </div>
+
           <div class = "whyUs" style="padding-bottom: 30px;">
                <h2 style="text-align: center;">
                     Почему выбирают нас?
                </h2>
-
                <table id="why_us">
                     <tr>
                         <td class="first-column" rowspan="2" style="text-align: right;"><img src="img/сообщество.png"></td>
@@ -273,73 +82,84 @@ ul {
                      </tr>
                 </table>
           </div>
-               <div class="club-zone">
-                    <h2 style="text-align: center; margin-top: 15px;">Зоны клуба</h2>
-                    <h3 style="text-align: center;">Силовые тренажеры</h3>
-                    <div class="zone-content">
-                        <div class="zone-description">
-                            <p>Силовые тренировки очень популярны среди наших клиентов, независимо от пола, возраста и уровня подготовки. Каждый, кто заботится о здоровье и красоте своего тела, выбирает данный вид тренинга.</p>
-                            <h4>Мировые<br>производители</h4>
-                            <p>В нашем клубе установлены тренажёры лучших фирм: Hoist, Hammer Strength, Life Fitness и другие.</p>
-                            <h4>Большой<br>выбор</h4>
-                            <p>В нашем клубе более 40 единиц оборудования на все группы мышц.</p>
-                            <h4>Дублирующиеся<br>тренажеры</h4>
-                            <p>Мы заботимся о вашем времени, поэтому самые популярные тренажёры дублируются, для избежания очередей.</p>
-                        </div>
-                        <div class="zone-images">
-                            <img src="img/power1.png" alt="Силовой тренажёр 1">
-                            <img src="img/power2.png" alt="Силовой тренажёр 2">
-                        </div>
+
+          <div class="club-zone">
+               <h2 style="text-align: center; margin-top: 15px;">Зоны клуба</h2>
+               <h3 style="text-align: center;">Силовые тренажеры</h3>
+               <div class="zone-content">
+                    <div class="zone-description">
+                         <p>Силовые тренировки очень популярны среди наших клиентов, независимо от пола, возраста и уровня подготовки. Каждый, кто заботится о здоровье и красоте своего тела, выбирает данный вид тренинга.</p>
+                         <h4>Мировые<br>производители</h4>
+                         <p>В нашем клубе установлены тренажёры лучших фирм: Hoist, Hammer Strength, Life Fitness и другие.</p>
+                         <h4>Большой<br>выбор</h4>
+                         <p>В нашем клубе более 40 единиц оборудования на все группы мышц.</p>
+                         <h4>Дублирующиеся<br>тренажеры</h4>
+                         <p>Мы заботимся о вашем времени, поэтому самые популярные тренажёры дублируются, для избежания очередей.</p>
                     </div>
-                </div>
-                <div class="club-zone">
-                    <h3 style="text-align: center;">Кардио тренажеры</h3>
-                    <div class="zone-content">
-                        <div class="zone-description">
-                            <p>Ни для кого не секрет преимущество кардиотренировок. Они укрепляют сердечно-сосудистую и дыхательную системы, повышают выносливость, способствуют похудению и общему оздоровлению организма.</p>
-                            <h4>Большое<br>количество</h4>
-                            <p>В нашем клубе более 10 кардиотренажёров, поэтому вы всегда найдёте свободный тренажёр для своей тренировки.</p>
-                            <h4>Разнообразие</h4>
-                            <p>У нас есть беговые дорожки, степперы, АМТ, несколько вариантов эллиптических тренажёров, Air Bike, гребной тренажёр и тренажёр имитирующий беговые лыжи.</p>
-                            <h4>Проффесиональные<br>тренажеры</h4>
-                            <p>В нашем клубе установлены тренажёры лучших фирм: Hoist, Hammer Strength, Life Fitness и другие.</p>
-                        </div>
-                        <div class="zone-images">
-                            <img src="img/cardio1.png" alt="Кардио тренажёр 1">
-                            <img src="img/cardio2.png" alt="Кардио тренажёр 2">
-                            <img src="img/cardio3.png" alt="Кардио тренажёр 3">
-                        </div>
+                    <div class="zone-images">
+                         <img src="img/power1.png" alt="Силовой тренажёр 1">
+                         <img src="img/power2.png" alt="Силовой тренажёр 2">
                     </div>
-                </div>
-
-               <div class="club-zone">
-                    <h3 style="text-align: center;">Свободные веса</h3>
-                    <div class="zone-content">
-                        <div class="zone-description">
-                            <p>Упражнения с гантелями, гирями, штангами и грифами - отличное дополнение к тренировке на тренажёрах. С точки зрения механики свободные веса обеспечивают естественность траектории и максимальную амплитуду движений.</p>
-                            <h4>Веса для<br>всех</h4>
-                            <p>Благодаря широкой линейке весов (от 1 кг до 62,5), вы в любом случае найдёте оборудование для себя</p>
-                            <h4>Разнообразие</h4>
-                            <p>В свободных весах, для вашей тренировки вы сможете найти: гантели, штанги, гири, разнообразные рукояти, диски и аксессуары.</p>
-                            <h4>Результативность</h4>
-                            <p>Используя в своих тренировках гири и штанги, вы сможете задействовать сразу несколько групп мышц и суставов, что недоступно даже в самых современных силовых тренажёрах.</p>
-                        </div>
-                        <div class="zone-images">
-                            <img src="img/weight1.png" alt="Кардио тренажёр 1">
-                            <img src="img/weight2.png" alt="Кардио тренажёр 2">
-                            <img src="img/weight3.png" alt="Кардио тренажёр 3">
-                        </div>
+               </div>
+          </div>
+          
+          <div class="club-zone">
+               <h3 style="text-align: center;">Кардио тренажеры</h3>
+               <div class="zone-content">
+                    <div class="zone-description">
+                         <p>Ни для кого не секрет преимущество кардиотренировок. Они укрепляют сердечно-сосудистую и дыхательную системы, повышают выносливость, способствуют похудению и общему оздоровлению организма.</p>
+                         <h4>Большое<br>количество</h4>
+                         <p>В нашем клубе более 10 кардиотренажёров, поэтому вы всегда найдёте свободный тренажёр для своей тренировки.</p>
+                         <h4>Разнообразие</h4>
+                         <p>У нас есть беговые дорожки, степперы, АМТ, несколько вариантов эллиптических тренажёров, Air Bike, гребной тренажёр и тренажёр имитирующий беговые лыжи.</p>
+                         <h4>Проффесиональные<br>тренажеры</h4>
+                         <p>В нашем клубе установлены тренажёры лучших фирм: Hoist, Hammer Strength, Life Fitness и другие.</p>
                     </div>
-                </div>
+                    <div class="zone-images">
+                         <img src="img/cardio1.png" alt="Кардио тренажёр 1">
+                         <img src="img/cardio2.png" alt="Кардио тренажёр 2">
+                         <img src="img/cardio3.png" alt="Кардио тренажёр 3">
+                    </div>
+               </div>
+          </div>
 
+          <div class="club-zone">
+               <h3 style="text-align: center;">Свободные веса</h3>
+               <div class="zone-content">
+                    <div class="zone-description">
+                         <p>Упражнения с гантелями, гирями, штангами и грифами - отличное дополнение к тренировке на тренажёрах. С точки зрения механики свободные веса обеспечивают естественность траектории и максимальную амплитуду движений.</p>
+                         <h4>Веса для<br>всех</h4>
+                         <p>Благодаря широкой линейке весов (от 1 кг до 62,5), вы в любом случае найдёте оборудование для себя</p>
+                         <h4>Разнообразие</h4>
+                         <p>В свободных весах, для вашей тренировки вы сможете найти: гантели, штанги, гири, разнообразные рукояти, диски и аксессуары.</p>
+                         <h4>Результативность</h4>
+                         <p>Используя в своих тренировках гири и штанги, вы сможете задействовать сразу несколько групп мышц и суставов, что недоступно даже в самых современных силовых тренажёрах.</p>
+                    </div>
+                    <div class="zone-images">
+                         <img src="img/weight1.png" alt="Кардио тренажёр 1">
+                         <img src="img/weight2.png" alt="Кардио тренажёр 2">
+                         <img src="img/weight3.png" alt="Кардио тренажёр 3">
+                    </div>
+               </div>
+          </div>
 
+          <div class="form">
+               <div id = "slogan" style="text-align: center;">
+                    <h2>Получи больше информации</h2>
+               </div>
 
-
-           <footer>
-                <div class="smart_info">
+               <form method="get" action="#" style="text-align: center;">
+                    <input name = "name" placeholder="Имя" class="input-field">
+                    <input phone = "phone" placeholder="Телефон" class="input-field">
+                    <input name = "otp" type="submit" value="Отправить" id="buy">
+               </form>
+          </div>
+          
+          <footer>
+               <div class="footer_links">
                     <div class="box">
                          <a href="index.html" ><img src = "img/лого.png"></a><br>
-                         <p id = "footer_info">
+                         <p class="footer_info">
                               Все размещенные на сайте сведения носят информационный характер и ни при каких условиях не являются офертой по смыслу ст. 435 ГК РФ и не являются публичной офертой по смыслу ст. 437 ГК РФ, если иное прямо не указано.
                          </p>
                     </div>
@@ -370,8 +190,8 @@ ul {
                               <p style="color: black;">!</p>
                          </ul>
                     </div>
-                </div> 
-           </footer>
+               </div> 
+          </footer>
      </div> 
 </body>  
 </html>

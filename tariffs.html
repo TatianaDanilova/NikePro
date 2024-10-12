@@ -7,201 +7,20 @@
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
-      <style>
-          div#content{
-               width: 80;
-               border: none;
-               margin:auto;
-               background-color: black;
-               color: white;
-               font-family: 'Jura', sans-serif;
-               font-size: 30px;
-          }
-
-          footer{
-               border-top: 2px solid #F8FF28; /* Граница только сверху */
-               border-right: none; /* Убираем границы справа */
-               border-bottom: none; /* Убираем границы снизу */
-               border-left: none; /* Убираем границы слева */
-          }
-          header, footer {
-               color:white;
-               background-color: black;
-               clear: left;
-               text-align: center;
-          }
-
-          nav{
-               height: 40px;
-               text-align: right;
-               margin-top: 30px;
-          }
-
-          nav a{
-               font-weight: lighter;
-               text-decoration: none;
-               color: white;
-               margin: 60px;
-          }
-
-          footer a{
-               font-weight: lighter;
-               text-decoration: none;
-               color: white;
-               margin: 30px auto; 
-               font-size: 15px;
-          }
-
-          footer p{
-               margin: 0%;
-               text-align: center;
-          }
-
-          #main{
-               padding: 1em;
-               text-align: center;
-          }
-
-          div #main_man img{
-               width: 1430px;
-               height: 450px;
-               padding: 0%;
-          }
-
-          nav img{
-               width: 255px;
-               height: 45px;
-               float: left;
-               margin-left: 60px;
-          }
-
-          #slogan{
-               font-size: 32px;
-          }
-
-          #footer_info{
-               font-size: 10px;
-          }
-          table#tariffs{
-               flex-wrap: nowrap;
-               width: auto;
-               margin: auto;
-               border-collapse: separate; /* Включаем отдельные границы ячеек */
-               border-spacing: 20px; /* Отступы между столбцами и строками */
-          }
-          td {
-               border: 2px solid white;
-               padding: 20px;
-               vertical-align: bottom;
-               height: auto;
-               width: 33%; /* Выравниваем ширину столбцов */
-               position: relative;
-          }
-          #light_tarif{
-               text-align: left;
-               border: 2px solid white;
-               height: 300px;
-               padding: 20px;
-          }
-          #pro_tarif{
-               text-align: left;
-               border: 2px solid #F8FF28;
-               position: relative; /* Обязательно добавляем это, чтобы работал `top` */
-               
-          }
-          #tarif_info{
-               font-size: 15px;
-          }
-          #not{
-               color: darkgray;
-          }
-          #buy {
-               background-color: #F8FF28;
-               border: none;
-               padding: 10px 100px;
-               cursor: pointer;
-               color: black;
-               font-size: 16px;
-               font-family: "Jura";
-               margin: 20px auto;
-               }
-          #smart_info{
-               display: flex; /* Включаем flex-контейнер */
-               justify-content: space-around; /* Равномерно распределяем элементы по горизонтали */
-               align-items: center; /* Выравнивание по вертикали */  
-          }
-          .box {
-    background-color: black;
-    color: white;
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
-    width: 20%; /* Ширина каждого элемента */
-}
-    .box img{
-     width: 255px;
-     height: 45px;
-     float: center;
-     margin-left: 10px;
-}
-          ul {
-               list-style-type: none; /* Убираем стандартные маркеры списка */
-               padding-left: 0;
-          }
-
-
-          li.check::before {
-               content: "✓"; /* Символ галочки (Unicode) */
-               color: #F8FF28;
-               font-weight: bold;
-               margin-right: 10px;
-          }
-
-          li.cross::before {
-               content: "𐄂"; /* Символ крестика (Unicode) */
-               color: darkgray;
-               font-weight: bold;
-               margin-right: 10px;
-          }
-          form {
-               width: 500px; /* Ширина формы */
-               margin: auto; /* Выравнивание формы по центру */
-               padding: 0px;
-               background-color: black; /* Фон формы */
-          }
-          .input-field {
-                /* Поля ввода занимают всю ширину формы */
-               padding: 10px 70px;
-               border: 1px solid white;
-               background-color: black;
-               color: white; /* Цвет текста */
-               font-size: 16px;
-               font-family: "Jura";
-               text-align: center;
-               margin: 5px auto;
-          }
-
-          .input-field:focus {
-               border-color: #F8FF28; /* Изменение цвета границы при фокусе */
-               outline: none; /* Убираем стандартную обводку */
-          }
-
-
-      </style>
+     <link rel="stylesheet" href="css/style.css">
+          
  <title> 
      Фитнес-клуб "НайкиПро"
  </title> 
 </head> 
 <body style="background-color: black;"> 
      <div id = "content">
-          <!-- Начало блока маню страницы -->
+
           <nav>
-               <a href="index.html"><img src = "img/лого.png"></a>
-     <!-- Гиперссылка на главную страницу сайта -->
+               <a href="index.html"><img src = "img/лого.png">
                <a href="index.html">
                     О нас
                </a>
-               <!-- гиперссылки на другие страницы -->
                 <a href="tariffs.html" style="color: #F8FF28;">
                     Тарифы
                 </a>
@@ -212,14 +31,14 @@
                     Тренеры
                </a>
           </nav>
+
           <header>
                <div id = "slogan">
                          <h1>Начни <span style="color: #F8FF28;">работать</span> над собой<br>уже <span style="color: #F8FF28;">сейчас</span><h1> 
                </div>
           </header>
 
-          <!-- Начало блока с основным содержимым -->
-           <div id = "main">
+          <div id = "main">
                <table id = "tariffs">
                     <tr>
                          <td id = "light_tarif">
@@ -266,22 +85,25 @@
                          </td>
                     </tr>
                </table>
-               <div id = "slogan">
-                         <h2>Получи больше информации</h2>
+          </div>
+
+          <div class="form">
+               <div id = "slogan" style="text-align: center;">
+                    <h2>Получи больше информации</h2>
                </div>
-               <form method="get" action="#">
+
+               <form method="get" action="#" style="text-align: center;">
                     <input name = "name" placeholder="Имя" class="input-field">
                     <input phone = "phone" placeholder="Телефон" class="input-field">
                     <input name = "otp" type="submit" value="Отправить" id="buy">
                </form>
-               
-           </div>
-
-           <footer>
-               <div class="smart_info">
+          </div>
+          
+          <footer>
+               <div class="footer_links">
                    <div class="box">
                         <a href="index.html" ><img src = "img/лого.png"></a><br>
-                        <p id = "footer_info">
+                        <p class="footer_info">
                              Все размещенные на сайте сведения носят информационный характер и ни при каких условиях не являются офертой по смыслу ст. 435 ГК РФ и не являются публичной офертой по смыслу ст. 437 ГК РФ, если иное прямо не указано.
                         </p>
                    </div>
