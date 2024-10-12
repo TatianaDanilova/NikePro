@@ -59,12 +59,8 @@
           }
 
           #main{
-               padding: 1em;
                text-align: center;
-               border-bottom: 1px solid #F8FF28; /* Граница только сверху */
-               border-right: none; /* Убираем границы справа */
-               border-top: none; /* Убираем границы снизу */
-               border-left: none; /* Убираем границы слева */
+               
 
           }
 
@@ -92,8 +88,14 @@
         display: flex; /* Включаем flex-контейнер */
         justify-content: space-around; /* Равномерно распределяем элементы по горизонтали */
         align-items: center; /* Выравнивание по вертикали */
-       
     }
+
+    .whyUs{
+     border-bottom: 1px solid #F8FF28; /* Граница только сверху */
+     border-right: none; /* Убираем границы справа */
+     border-top: none; /* Убираем границы снизу */
+     border-left: none; /* Убираем границы слева */   
+     }
     table#why_us {
     width: 80%;
     margin: auto;
@@ -154,6 +156,45 @@ ul {
      margin-left: 10px;
 }
 
+.club-zone {
+    color: white;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: black;
+
+}
+
+.zone-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.zone-description {
+    width: 50%;
+}
+
+.zone-description p {
+    font-size: 32px;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.zone-description h4 {
+     font-size: 35px;
+    color: #F8FF28;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.zone-images {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
 
       </style>
  <title> 
@@ -204,8 +245,8 @@ ul {
                          <p><span style="color: #F8FF28;">50</span><br>тренажеров</p>
                </div>  
           </div>
-          <div>
-               <h2 style="margin-left: 220px;">
+          <div class = "whyUs" style="padding-bottom: 30px;">
+               <h2 style="text-align: center;">
                     Почему выбирают нас?
                </h2>
 
@@ -231,8 +272,65 @@ ul {
                          <td class="fourth-column" style="padding-right: 100px;">Мы оснащены новейшими тренажерами и спортивным инвентарем, которые делают ваши тренировки комфортными и продуктивными.</td>
                      </tr>
                 </table>
-                
-           </div>
+          </div>
+               <div class="club-zone">
+                    <h2 style="text-align: center; margin-top: 15px;">Зоны клуба</h2>
+                    <h3 style="text-align: center;">Силовые тренажеры</h3>
+                    <div class="zone-content">
+                        <div class="zone-description">
+                            <p>Силовые тренировки очень популярны среди наших клиентов, независимо от пола, возраста и уровня подготовки. Каждый, кто заботится о здоровье и красоте своего тела, выбирает данный вид тренинга.</p>
+                            <h4>Мировые<br>производители</h4>
+                            <p>В нашем клубе установлены тренажёры лучших фирм: Hoist, Hammer Strength, Life Fitness и другие.</p>
+                            <h4>Большой<br>выбор</h4>
+                            <p>В нашем клубе более 40 единиц оборудования на все группы мышц.</p>
+                            <h4>Дублирующиеся<br>тренажеры</h4>
+                            <p>Мы заботимся о вашем времени, поэтому самые популярные тренажёры дублируются, для избежания очередей.</p>
+                        </div>
+                        <div class="zone-images">
+                            <img src="img/power1.png" alt="Силовой тренажёр 1">
+                            <img src="img/power2.png" alt="Силовой тренажёр 2">
+                        </div>
+                    </div>
+                </div>
+                <div class="club-zone">
+                    <h3 style="text-align: center;">Кардио тренажеры</h3>
+                    <div class="zone-content">
+                        <div class="zone-description">
+                            <p>Ни для кого не секрет преимущество кардиотренировок. Они укрепляют сердечно-сосудистую и дыхательную системы, повышают выносливость, способствуют похудению и общему оздоровлению организма.</p>
+                            <h4>Большое<br>количество</h4>
+                            <p>В нашем клубе более 10 кардиотренажёров, поэтому вы всегда найдёте свободный тренажёр для своей тренировки.</p>
+                            <h4>Разнообразие</h4>
+                            <p>У нас есть беговые дорожки, степперы, АМТ, несколько вариантов эллиптических тренажёров, Air Bike, гребной тренажёр и тренажёр имитирующий беговые лыжи.</p>
+                            <h4>Проффесиональные<br>тренажеры</h4>
+                            <p>В нашем клубе установлены тренажёры лучших фирм: Hoist, Hammer Strength, Life Fitness и другие.</p>
+                        </div>
+                        <div class="zone-images">
+                            <img src="img/cardio1.png" alt="Кардио тренажёр 1">
+                            <img src="img/cardio2.png" alt="Кардио тренажёр 2">
+                            <img src="img/cardio3.png" alt="Кардио тренажёр 3">
+                        </div>
+                    </div>
+                </div>
+
+               <div class="club-zone">
+                    <h3 style="text-align: center;">Свободные веса</h3>
+                    <div class="zone-content">
+                        <div class="zone-description">
+                            <p>Упражнения с гантелями, гирями, штангами и грифами - отличное дополнение к тренировке на тренажёрах. С точки зрения механики свободные веса обеспечивают естественность траектории и максимальную амплитуду движений.</p>
+                            <h4>Веса для<br>всех</h4>
+                            <p>Благодаря широкой линейке весов (от 1 кг до 62,5), вы в любом случае найдёте оборудование для себя</p>
+                            <h4>Разнообразие</h4>
+                            <p>В свободных весах, для вашей тренировки вы сможете найти: гантели, штанги, гири, разнообразные рукояти, диски и аксессуары.</p>
+                            <h4>Результативность</h4>
+                            <p>Используя в своих тренировках гири и штанги, вы сможете задействовать сразу несколько групп мышц и суставов, что недоступно даже в самых современных силовых тренажёрах.</p>
+                        </div>
+                        <div class="zone-images">
+                            <img src="img/weight1.png" alt="Кардио тренажёр 1">
+                            <img src="img/weight2.png" alt="Кардио тренажёр 2">
+                            <img src="img/weight3.png" alt="Кардио тренажёр 3">
+                        </div>
+                    </div>
+                </div>
 
 
 
